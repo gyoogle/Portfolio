@@ -514,6 +514,7 @@ li.grid-item{
   position:relative;
   float:left;
   padding:15px;
+  margin-right: 20px;
 }
 
 .grid-hover{
@@ -538,7 +539,7 @@ li.grid-item{
 .grid-hover h1{
   font-size:23px;
   bottom:80px;
-  left:40px;
+  left:20px;
   position:absolute;
   text-transform:uppercase;
   color:#000000;
@@ -550,7 +551,7 @@ li.grid-item{
 .grid-hover p{
   font-size:13px;
   bottom:40px;
-  left:40px;
+  left:20px;
   position:absolute;
   color:#686868;
   letter-spacing:1px;
