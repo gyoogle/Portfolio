@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- META -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta property="og:title" content="og title" />
+  <meta property="og:description" content="og desc" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta name="keywords" content="key1, key2, key3" />
+  <meta name="description" content="desc" />
+
+  <!-- Favicon -->
+  <link href="" rel="shortcut icon" />
+
+  <!-- CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style_comp.css" />
+  <link rel="stylesheet" href="css/style-responsive.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <!--JS-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="./js/ld.js"></script>
+
+  <title>Gyuseok</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header-wrapper">
+    <div class="header-contents">
+      <!-- 타이틀 -->
+      <p class="title" onclick="ssafy.ld.goPage(0)">GYUSEOK KIM</p>
+
+      <!-- 상단 메뉴 && 모바일 메뉴 -->
+      <div class="nav-bar">
+        <ul>
+          <li>
+            <a class="a-nav-bar" onClick="ssafy.ld.goPage(1)">About Me</a>
+          </li>
+          <li>
+            <a class="a-nav-bar" onClick="ssafy.ld.goPage(2)">Skills</a>
+          </li>
+          <li>
+            <a class="a-nav-bar" onClick="ssafy.ld.goPage(3)">Portfolio</a>
+          </li>
+          <li>
+            <a class="a-nav-bar" onClick="ssafy.ld.goPage(4)">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <div class="main-wrapper">
+    <!-- section-1 -->
+    <div class="section section-1">
+      <div class="section-1-background"></div>
+      <div class="section-content">
+        <h1>
+          <span>Hello.</span> <br />
+          <span>I'm Frontend Developer.</span>
+        </h1>
+      </div>
+      <button class="btn-scroll-down" onclick="ssafy.ld.goPage(1)">
+        Scroll down
+      </button>
+    </div>
+
+    <!-- section-2 : 자기소개 -->
+    <div class="section section-2">
+      <div class="section-content">
+        <div>
+          <p class="txt">About Me</p>
+          <h2 class="txt">Kim Gyuseok</h2>
+          <p class="txt">
+            안녕하세요.<br>
+            삼성 청년 SW 아카데미 김규석입니다.<br>
+            저는 개발을 좋아하고 배우는 것을 좋아합니다.<br><br>
+            <a href="https://github.com/kim6394" target="_blank"><img src="assets/img/github.png" width="50"
+                height="50"></a>
+            <a href="https://kim6394.tistory.com/" target="_blank"><img src="assets/img/tistory.jfif" width="50"
+                height="50"></a>
+            <a href="https://www.instagram.com/gsk1229/" target="_blank"><img src="assets/img/Instagram.jpg" width="50"
+                height="50"></a>
+          </p>
+
+        </div>
+        <div>
+          <img src="assets/img/img-about-me.png" alt="" width="600" />
+        </div>
+      </div>
+    </div>
+
+    <!-- section-3 : 보유 기술 역량 -->
+    <div class="section section-3">
+      <div class="section-3-background"></div>
+      <div class="section-content">
+        <h2>Skills</h2>
+        <div>
+          <ul>
+            <li>HTML5</li>
+            <li><span class="score score-html5"></span></li>
+            <li>CSS3</li>
+            <li><span class="score score-css3"></span></li>
+          </ul>
+          <ul>
+            <li>Javascript</li>
+            <li><span class="score score-js"></span></li>
+            <li>Node.js</li>
+            <li><span class="score score-node"></span></li>
+          </ul>
+          <ul>
+            <li>Java</li>
+            <li><span class="score score-java"></span></li>
+            <li>Spring</li>
+            <li><span class="score score-spring"></span></li>
+          </ul>
+          <ul>
+            <li>React</li>
+            <li><span class="score score-react"></span></li>
+            <li>Vue.js</li>
+            <li><span class="score score-vue"></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="clear"></div>
+    <!-- section-4 : 포트폴리오 -->
+    <div class="section section-4">
+      <div class="content" id="ajax-content">
+
+        <div class="text-intro">
+
+          <h1>Projects</h1>
+          <p>수행했던 팀/개인 프로젝트입니다</p>
+
+        </div>
+
+
+        <!--Portfolio grid-->
+
+        <ul class="portfolio-grid">
+
+          <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+            <img src="assets/img/1.jpg">
+            <a class="ajax-link" href="https://github.com/kim6394/SafeFood_WebProject">
+              <div class="grid-hover">
+                <h1>안전? 어 안전!</h1>
+                <p>사용자가 섭취한 식품의 영양 성분을 파악</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+            <img src="assets/img/2.jpg">
+            <a class="ajax-link" href="https://github.com/kim6394/ImageGenerator_PythonSocket">
+              <div class="grid-hover">
+                <h1>딥러닝 기반 배경 생성 App</h1>
+                <p>GAN+어텐션 기법을 활용한 배경 생성 App</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+            <img src="assets/img/3.jpg">
+            <a class="ajax-link" href="https://github.com/kim6394/BirdTalk">
+              <div class="grid-hover">
+                <h1>BirdTalk</h1>
+                <p>Node.js 기반 SNS 서비스</p>
+              </div>
+            </a>
+          </li>
+
+          <li class="grid-item" data-jkit="[show:delay=3000;speed=500;animation=fade]">
+            <img src="assets/img/4.gif">
+            <a class="ajax-link" href="https://github.com/kim6394/React_ManagementSystem">
+              <div class="grid-hover">
+                <h1>React User_Management</h1>
+                <p>리액트와 노드 기반 사용자 관리 시스템</p>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <!-- section-5 : Contact -->
+    <div class="section section-5">
+      <div class="section-5-background"></div>
+      <div class="content" id="ajax-content">
+
+        <div class="text-intro">
+
+          <h1>Contact</h1>
+          <p>연락을 주고 받을 수 있는 페이지입니다. 문의사항이 있으시면 폼을 작성해주세요</p>
+
+          <form method="post" action="?" data-jkit="[form:validateonly=true]">
+
+            <div class="contact-one">
+              <p>
+                <label for="miniusername">Username:</label><br />
+                <input name="miniusername" id="miniusername"
+                  data-jkit="[validate:required=true;min=3;max=10;error=Please enter your username (3-10 characters)]">
+              </p>
+            </div>
+
+            <div class="contact-two">
+              <p>
+                <label for="miniemail">E-mail:</label><br />
+                <input name="miniemail" id="miniemail"
+                  data-jkit="[validate:required=true;strength=50;error=Please write your email]">
+              </p>
+            </div>
+
+            <div class="contact-three">
+              <p>
+                <label>Message:</label><br />
+                <textarea id="message" name="message"></textarea><br /><br />
+
+                <input class="button-submit" name="send" type="submit" value="SUBMIT" />
+              </p>
+            </div>
+
+            <p>
+            </p>
+          </form>
+
+
+        </div>
+
+        <br /><br /><br /><br /><br /><br /><br /><br />
+
+      </div>
+    </div>
+
+    <!-- footer-->
+    <div class="footer">
+      <p>Copyright 2019 Kim gyuseok All Right Reserved.</p>
+    </div>
+  </div>
+
+  <!-- init script -->
+  <script type="text/javascript" charset="utf-8">
+    $(document).ready(function () {
+      // scroll active
+      setTimeout(function () {
+        var items = document.querySelectorAll(".section");
+        items[0].classList.add("active");
+      }, 500);
+
+      ssafy.ld.init();
+    });
+  </script>
+</body>
+
+</html>
