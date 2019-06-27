@@ -381,7 +381,7 @@ button:focus {
 .score {
   height: 16px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: beige;
   display: inline-block;
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
@@ -659,8 +659,7 @@ CONTACT
 }
 
 .section-5-background {
-  background-image: url(https://s17736.pcdn.co/wp-content/uploads/2019/04/04-brighttexture-1032x581.jpg);
-  background-color: #8f94fb;
+  background-image: url(https://www.ridgewaybusinesscenter.com/wp-content/uploads/2013/12/contact-opus-background-1.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
